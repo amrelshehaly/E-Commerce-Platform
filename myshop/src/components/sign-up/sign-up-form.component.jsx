@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import {CreateAccountWIthGoogleEmailandPassword, createUserDocumentFromAuth} from '../../utils/firebase/firebase.utils'
 import FormInput from '../form-input/form-input.component'
 import './sign-up-form.styles.scss'
@@ -42,7 +42,7 @@ const SignUpForm = () =>{
 
         try {
             const {user} =  await CreateAccountWIthGoogleEmailandPassword(formField)
-            const response = await createUserDocumentFromAuth(user, {displayName})
+            await createUserDocumentFromAuth(user, {displayName})
             await resetFormField()
             
         } catch (error) {
