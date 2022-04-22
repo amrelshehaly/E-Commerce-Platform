@@ -1,5 +1,5 @@
 import {createContext, useReducer} from 'react'
-import createAction from '../utils/reducer/reducer.utils'
+import {createAction} from '../utils/reducer/reducer.utils'
 
 
 const RemoveCartItem = (cartItems, productToRemove) => {
@@ -53,7 +53,7 @@ const CART_ACTION_TYPES = {
 
 const INTIAL_STATE = {
     cartItems: [],
-    isCartOpen: true,
+    isCartOpen: false,
     cartCount: 0,
     cartTotal: 0
 }
