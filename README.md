@@ -6,3 +6,5 @@
 - Used HTML, Sass and Javascript to design a responsive user interface.
 - Used Cloud Firestore REST API to store items of different categories.
 - Used Firebase Authentication to authenticate users, including email address and password sign-in and Google sign-in.
+
+Project Url: https://voluble-kleicha-67e5de.netlify.app
