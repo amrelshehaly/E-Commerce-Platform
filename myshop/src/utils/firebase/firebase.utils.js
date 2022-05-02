@@ -67,14 +67,12 @@ export const getCategoriesAndDocuments = async () =>{
 }
 
 
-export const createUserDocumentFromAuth = async (userAuth, additionalInformation = {})=> {
+export const createUserDocumentFromAuth = async (userAuth, additionalInformation = {})=> { //creating user in firestore if user is not logged in before
 
 
     if(!userAuth) return;
 
     const userDocRef = doc(db, 'users', userAuth.uid)
-
-    console.log(userDocRef)
 
     const userSnapshot = await getDoc(userDocRef)
 

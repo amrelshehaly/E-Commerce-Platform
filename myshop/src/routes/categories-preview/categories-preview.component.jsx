@@ -13,7 +13,7 @@ const CategoriesPreview = () => {
     const categoriesMap = useSelector(selectCategoriesMap)
 
     return (
-        <div className="category-preview-container">
+        <Fragment>
             {
                
                 Object.keys(categoriesMap).map(title =>{
@@ -24,7 +24,7 @@ const CategoriesPreview = () => {
                 })
                 
             }
-        </div>
+        </Fragment>
         
     )
 }
