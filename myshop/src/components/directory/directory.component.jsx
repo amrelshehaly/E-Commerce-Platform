@@ -9,6 +9,7 @@ const Directory = ({categories}) =>{
           return(
             <CategoryItem key={category.id} category={category} />
           )
+
         })
       }
     </div>
